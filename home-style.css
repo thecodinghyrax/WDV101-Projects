@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #7D7F8B;
+    color: white;
+}
+
+body,
+textarea {
+    font-family: 'Lato', sans-serif;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    margin-top: -5px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222;
+    color: white;
+    list-style-type: none;
+}
+
+nav li {
+    float: left;
+    margin-right: 10px;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+nav li:hover {
+    background-color: #000;
+}
+
+nav li a:hover {
+    color: rgb(214, 247, 234);
+}
+
+p a {
+    color: aqua;
+    text-decoration: none;
+}
+
+.banner {
+    width: 100vw;
+    ;
+}
+
+.title {
+    font-size: 4em;
+}
+
+.left-photo {
+    border-radius: 10px;
+    border: 1px black solid;
+    width: 250px;
+    margin: 10px 10px 10px 25px;
+}
+
+.main {
+    width: 85%;
+}
+
+.center-section {
+    width: 70%;
+}
+
+.main p {
+    color: azure;
+}
+
+.interests {
+    padding-left: 30px;
+}
+
+iframe {
+    border: 0;
+}
+
+.photo {
+    height: 200px;
+    padding: 10px;
+    transition: transform .3s;
+}
+
+.photo:hover {
+    transform: scale(2);
+    padding: 0;
+    border-radius: 5px;
+    border: 1px gray solid;
+}
+
+
+/* adding a margin to the first photo in a row to avoid it trailing off of the screen */
+
+.photo.first:hover {
+    margin-left: 150px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.side {
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: rgb(121, 139, 156);
+    color: black;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.side h1 {
+    text-align: center;
+}
+
+.side-photo {
+    width: 160px;
+    height: 118px;
+    margin: 0 auto;
+    padding: 4px 10px;
+}
+
+.m-tb {
+    margin: 30px 0;
+}
+
+.link-container {
+    padding: 20px 30px;
+    margin: 30px 0;
+    width: 200px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: #868fc4;
+    text-align: center;
+}
+
+.link-button {
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-container {
+    display: inline-block;
+    width: 400px;
+    height: 150px;
+    vertical-align: top;
+}
+
+.contact-container input[type="checkbox"],
+.contact-container input[type="radio"] {
+    margin-left: 130px;
+}
+
+.contact-container p {
+    margin-left: 110px;
+    font-size: 1.3em;
+}
+
+fieldset,
+input,
+select,
+textarea {
+    border-radius: 5px;
+}
+
+fieldset {
+    background-color: #adb0be;
+    border-color: #000;
+}
+
+legend {
+    font-size: 1.6em;
+    text-shadow: black 1px 1px;
+}
+
+.input-labels label {
+    display: block;
+    text-align: right;
+    margin: 4px 5px 4px 0;
+}
+
+.input-fields input,
+.input-fields select {
+    display: block;
+    margin: 2px 0;
+    height: 22px;
+    font-family: 'Lato', sans-serif;
+}
+
+.info {
+    margin: 15px 0;
+    width: 500px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    font-size: 1.4em;
+    margin: 10px;
+    margin-left: 0;
+    background-color: rgb(121, 139, 156);
+    color: white;
+}
+
+.success {
+    border: 1px solid green;
+    background-color: rgb(6, 153, 6);
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.error {
+    border: 1px solid red;
+    background-color: rgb(247, 43, 43);
+    border-radius: 5px;
+    color: black;
+    padding: 7px;
+}
+
+table {
+    border-spacing: 2em 0;
+}
+
+th {
+    text-align: left;
+    font-size: 1.2em;
+}
+
+tr td:nth-child(2) {
+    margin-left: 20px;
+}
+
+.homework-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.homework-container div {
+    margin: 2em;
+}
+
+.homework-container div:hover {
+    background-color: cornflowerblue;
+}

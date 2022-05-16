@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #222;
+}
+
+
+#header {
+    background-color: aqua;
+    background-image: url("images/capitol.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header img {
+    width: 20vw;
+}
+
+#header h1 {
+    font-size: 4em;
+    align-self: center;
+    text-shadow: 1px 1px 2px white;
+}
+
+
+#nav {
+    display: flex;
+}
+
+#nav li {
+    display: inline-block;
+    font-size: 1.2em;
+    list-style: none;
+}
+
+#nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Adding flex to the a tag to allow it to stretch and fill the entire li element */
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+#nav li:hover  {
+    background-color: #444;
+}
+
+#nav a:hover {
+    color: lightskyblue;
+}
+
+
+#main {
+    display: flex;
+}
+
+.card {
+    background-color: grey;
+    width: 30vw;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 1.2em;
+    font-size: 2em;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h1 {
+    padding: 1em;
+    font-size: 1.4em;
+}
+
+.card ul {
+    padding: 1.5em;
+    line-height: 2em;
+}
+
+.employers {
+    padding-top: 0 !important;
+}
+.employers li {
+    color: #222;
+}
+
+
+#footer {
+    background-color: rgb(32, 87, 189);
+}
+
+#footer h1 {
+    padding: 1.2em;
+}
+
+
+@media screen and (max-width: 800px) {
+    #main, #nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav li{
+        width: 90vw;
+        border: 2px solid white;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .nav-container {
+        margin: 0.5em 0;
+    }
+
+    .card {
+        width: 90vw;
+        margin-top: 0.1em;
+    }
+
+    #header img{
+        display: none;
+    }
+
+    #header h1 {
+        padding: 0.7em;
+    }
+
+
+
+}

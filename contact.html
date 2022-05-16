@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact form">
+    <meta name="keywords" content="Contact, services, reference, email">
+    <link rel="stylesheet" href="home-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Tajawal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/me.ico">
+    <title>Contact Drew</title>
+    <!-- author: Drew Crawford
+        date: 3-1-2022 -->
+</head>
+
+<body>
+
+
+    <header>
+
+        <img src="images/banner.webp" alt="misty landscape" class="banner" />
+
+        <nav id="top">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="WDV101/homework.html">Projects (Homework)</a></li>
+                <li><a href="interests.html">Interests</a></li>
+                <li><a href="contact.html">Contact Me!</a></li>
+                <li class="right"><a href="https://twitter.com/thecodinghyrax"><i class='fa fa-twitter'></i></a></li>
+                <li class="right"><a href="https://github.com/thecodinghyrax"><i class='fa fa-github'></i></a></li>
+                <li class="right"><a href="https://www.linkedin.com/in/andrew-crawford-ba0564116/"><i class='fa fa-linkedin'></i></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <section>
+
+        <!-- Main section for the contact form -->
+        <div class="main interests left">
+
+            <h1 class="title">Contact Me</h1>
+
+            <p class="info">Please complete this simple contact form so I can have your information and will be able to get back to you as quickly as possible.
+            </p>
+
+            <form action="contact_form_response.php" method="post">
+
+                <fieldset>
+
+                    <legend>Your information</legend>
+
+                    <div class="contact-container">
+
+                        <div class="input-labels left">
+                            <label for="first_name">First</label>
+                            <label for="last_name" class="rights">Last</label>
+                            <label for="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></label>
+                            <label for="phone"><i class="fa fa-mobile" aria-hidden="true"></i></label>
+                            <label for="contact_method">Contact preference</label>
+                            <label for="time">Good contact time</label>
+                        </div>
+
+                        <div class="input-fields">
+                            <input type="text" name="first_name" id="first_name">
+                            <input type="text" name="last_name" id="last_name">
+                            <input type="email" name="email" id="email" placeholder="you@email.com">
+                            <input type="tel" name="phone" id="phone" placeholder="111-111-1111">
+                            <select name="contact_method" id="contact_method">
+                                <option value="call">Call me</option>
+                                <option selected value="email_only">Email only</option>
+                                <option value="either">Either is fine</option>
+                            </select>
+                            <input type="text" value="Anytime" name="time" id="time">
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-container">
+
+                        <p>What can I help you with?</p>
+
+                        <div>
+                            <input type="checkbox" name="help[]" id="web_design" value="web_design">
+                            <label for="web_design">Web Design</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="help[]" id="pc_build" value="pc_build">
+                            <label for="pc_build">PC Build</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="help[]" id="construction" value="construction">
+                            <label for="construction">Construction Project</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="help[]" id="training" value="training">
+                            <label for="training">Personal Training</label>
+
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="help[]" id="charity" value="charity">
+                            <label for="charity">Charity Event</label>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-container">
+
+                        <p>How did you hear about me?</p>
+
+                        <div>
+                            <input type="radio" name="reference" id="google" value="google">
+                            <label for="google">Google</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="reference" id="bing" value="bing">
+                            <label for="bing">Bing</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="reference" id="friend" value="friend">
+                            <label for="friend">Friend Refered</label>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <fieldset>
+
+                    <legend>Anything else I need to know</legend>
+
+                    <textarea name="comments" id="comments" cols="51" rows="5"></textarea>
+
+                </fieldset>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <!-- Left hand side bar for images with links -->
+        <div class="side right">
+
+            <h1>Involvments</h1>
+            <div>
+                <a href="https://www.extra-life.org/participant/Andrew-Crawford-2022">
+                    <img class="side-photo" src="images/extra+life+logo1.webp" alt="Extra Life logo">
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.renewedhope.us">
+                    <img class="side-photo" src="images/RH.webp" alt="Extra Life logo">
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.dmacc.edu">
+                    <img class="side-photo" src="images/logo-dmacc.webp" alt="Extra Life logo">
+                </a>
+            </div>
+
+            <div>
+                <a href="http://www.stpaulankeny.org/">
+                    <img class="side-photo" src="images/stpaul.webp" alt="Extra Life logo">
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
