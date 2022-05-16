@@ -1,0 +1,71 @@
+* {
+    /* box-sizing: border-box; */
+}
+
+
+/* div:first-of-type {
+    width: 90vw;
+    margin: 0 auto;
+} */
+
+form {
+    width: 85vw;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 0.7em;
+    padding: 1em;
+    background-color: #b8c4dc;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form h2,
+form p {
+    flex: none;
+    width: 100%;
+}
+
+form>div {
+    display: flex;
+    flex: 1 0 100%;
+    margin: 0.25em 0;
+}
+
+form>div>label {
+    flex: 0 0 140px;
+    /* border: 1px solid red; */
+    text-align: right;
+    padding-right: 0.5em;
+}
+
+form>div>input,
+form>div>textarea {
+    flex: 4 0 200px;
+}
+
+select {
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.form-radio {
+    justify-content: space-around;
+}
+
+textarea {
+    height: 20vh;
+}
+
+form>div:last-child {
+    justify-content: center;
+}
+
+form>div:last-child>input {
+    flex: 0 0 auto;
+    margin: 0 0.5em;
+    border-radius: 5px;
+}

@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+
+/* Box sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+body {
+    background-color: rgb(192, 220, 245);
+}
+
+/* Font-family property to apply web-safe fonts to paragraphs. */
+/* Grouped selector */
+p,
+nav,
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.centered-content {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* Decendant */
+nav ul {
+    margin-top: -4px;
+    width: 960px;
+    overflow: hidden;
+    background-color: #373737;
+    color: white;
+    list-style-type: none;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Pseudo class */
+nav li:hover {
+    background-color: #575757;
+}
+
+/* Hover effect for the navigation buttons  */
+nav li a:hover {
+    color: rgb(192, 220, 245);
+}
+
+p>a {
+    text-decoration: none;
+    color: rgb(19, 101, 252);
+}
+
+/* Font formatting */
+h1 {
+    font-size: 3em;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    padding: 8px;
+}
+
+p {
+    text-indent: 1em;
+}
+
+hr {
+    border: 0;
+    margin: 30px 10px;
+    height: 3px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, rgb(192, 220, 245), #FFF, rgb(192, 220, 245));
+    background-image: -moz-linear-gradient(left, rgb(192, 220, 245), #FFF, rgb(192, 220, 245));
+    background-image: -ms-linear-gradient(left, rgb(192, 220, 245), #FFF, rgb(192, 220, 245));
+    background-image: -o-linear-gradient(left, rgb(192, 220, 245), #FFF, rgb(192, 220, 245));
+}
+
+/* Padding */
+section p {
+    font-size: 1.3em;
+    padding: 0 20px;
+}
+
+/* Custom font for headings */
+/* Text formatting */
+.title-font {
+    font-family: 'Exo', sans-serif;
+    text-transform: uppercase;
+    /* Trying to match the shadow effect in the banner image*/
+    text-shadow: 2px 2px 7px white, -2px -2px 7px white, -2px 2px 7px white, 2px -2px 7px white;
+}
+
+/* Independent class */
+.bk-1 {
+    background-color: rgb(208, 236, 261);
+}
+
+.bk-2 {
+    background-color: rgb(134, 190, 235);
+}
+
+.bk-3 {
+    background-color: rgb(200, 229, 295);
+}
+
+.bk-4 {
+    background-color: rgb(192, 209, 245);
+}
+
+.panel-lg {
+    height: 400px;
+}
+
+.panel-sm {
+    height: 325px;
+}
+
+.section-content {
+    padding: 50px 15px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+/* Margin */
+/* Border */
+.section-image {
+    margin: 0 10px;
+    border: 1px black solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.map>iframe {
+    margin: 20px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+/* Dependent class */
+img.profile-image {
+    margin: 0 20px 20px 0;
+}
+
+.dog-list {
+    padding: 20px 30px;
+    list-style: none;
+}
+
+.dog-list li:not(:last-child):after {
+    content: '  |  ';
+    padding: 0 10px;
+    color: oldlace;
+}
+
+.image-center {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.profile-container {
+    width: 405px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    margin: 30px;
+    position: relative;
+}
+
+.container-wide {
+    height: 550px;
+}
+
+.container-tall {
+    height: 850px;
+}
+
+.profile-image {
+    width: 400px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 125px;
+}

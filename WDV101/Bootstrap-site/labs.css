@@ -1,0 +1,15 @@
+/* .carousel-inner {
+    max-height: 200px !important;
+    width: 100%;
+} */
+
+.lab-pic {
+    width: 20px !important;
+    height: auto;
+}
+
+.jumbotron {
+    background-image: url(images/lab-jumbo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
